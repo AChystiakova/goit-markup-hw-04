@@ -2,11 +2,11 @@
   --primary-text-color: #757575;
   --titel-text-color: #212121;
   --accent-color: #2196f3;
-  --main-site-color: #FFFFFF;
+  --main-site-color: #ffffff;
   --primary-site-background: #f5f5f5;
   --secondary-site-backgroud: #2f303a;
-  --team-section-backgroung:#F5F4FA;
-  --main-button-color: #188CE8;
+  --team-section-backgroung: #f5f4fa;
+  --main-button-color: #188ce8;
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 }
 
 img {
- display: block;
+  display: block;
 }
 
 /* reset */
@@ -43,27 +43,26 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  background-color: var(--main-site-color)
+  background-color: var(--main-site-color);
 }
 
 /*логотип*/
 .container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin-right: auto;
-margin-left: auto; 
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-nav {
-display: flex;
-align-items: center;
-/* outline: solid tomato; */
-
+  display: flex;
+  align-items: center;
+  /* outline: solid tomato; */
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -86,18 +85,16 @@ align-items: center;
 /* навігація сайту */
 
 .site-nav {
-display: flex;
-margin-left: 93px;
- 
+  display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .nav-item {
   align-items: center;
-  
 }
 
 .site-nav .nav-item:not(:last-child) {
- margin-right: 50px;
+  margin-right: 50px;
 }
 
 .site-nav .link {
@@ -110,7 +107,6 @@ margin-left: 93px;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
 .site-nav .link:hover,
@@ -121,7 +117,6 @@ margin-left: 93px;
 .site-nav .link.current {
   color: var(--accent-color);
 }
-
 
 .list {
   list-style: none;
@@ -144,15 +139,13 @@ margin-left: 93px;
 }
 
 .header-contacts {
- display: flex;
- margin-left: auto;
-
+  display: flex;
+  margin-left: auto;
 }
 
 .header-contacts .item + .item {
   margin-left: 50px;
 }
-
 
 .header-contacts .contact-list:hover,
 .contact-list:focus {
@@ -162,14 +155,23 @@ margin-left: 93px;
 /* основний зміст студія*/
 
 .section {
-padding-top: 94px;
-padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero {
-background-color: var(--secondary-site-backgroud);
- padding-top: 200px;
- padding-bottom: 200px;
+  background-color: var(--secondary-site-backgroud);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header {
@@ -185,7 +187,6 @@ background-color: var(--secondary-site-backgroud);
   max-width: 696px;
   text-align: center;
   margin: 0 auto 30px;
-  
 }
 
 .main-button {
@@ -203,15 +204,12 @@ background-color: var(--secondary-site-backgroud);
   margin: 0 auto;
   padding: 10px 32px;
   min-width: 216px;
-  border: 0
- 
+  border: 0;
 }
 
 .main-button:hover,
 .main-button:focus {
-
   background-color: var(--main-button-color);
-  
 }
 
 .visually-hidden {
@@ -229,14 +227,14 @@ background-color: var(--secondary-site-backgroud);
 
 /* section titel-box */
 
-  .feature {
+.feature {
   display: flex;
- }
+}
 
- .feature .titel-item {
+.feature .titel-item {
   margin-right: 30px;
-  width: 270px;  
- }
+  width: 270px;
+}
 
 .feature .titel-item:last-child {
   margin-right: 0;
@@ -247,28 +245,60 @@ background-color: var(--secondary-site-backgroud);
   text-transform: uppercase;
   font-size: 14px;
   line-height: calc(16 / 14);
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .titel-text {
   font-size: 14px;
   line-height: 1.7;
 }
+.titel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  border-radius: 4px;
+}
 
+.icon1 {
+  background-image: url(../images/antenna\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon2 {
+  background-image: url(../images/clock\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon3 {
+  background-image: url(../images/diagram\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon4 {
+  background-image: url(../images/astronaut\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Section occupation */
 
 .occupation {
-
   padding-top: 0px;
   padding-bottom: 94px;
 }
 .occupation-img {
   display: flex;
-  
 }
 
 .occupation-img .img-item {
-margin-right: 30px;
+  margin-right: 30px;
 }
 
 .occupation-img .img-item:last-child {
@@ -282,7 +312,6 @@ margin-right: 30px;
   text-align: center;
   margin-bottom: 50px;
   /* outline: solid tomato; */
-  
 }
 
 /* Section team */
@@ -298,23 +327,22 @@ margin-right: 30px;
 
 .team-list .team-img {
   margin-right: 30px;
-
 }
 .team-list .team-img:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .team-img {
   background-color: var(--main-site-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /* outline: solid tomato; */
 }
 
-.picture { 
+.picture {
   margin-bottom: 30px;
   /* outline: solid tomato; */
-  
 }
 .team-titel {
   color: var(--titel-text-color);
@@ -341,8 +369,17 @@ margin-right: 0;
   /* outline: solid tomato; */
 }
 
-/* Портфоліо */
+/* Client_Logo */
 
+.client-header {
+  color: var(--titel-text-color);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Портфоліо */
 
 .filter-button {
   font-family: inherit;
@@ -350,7 +387,7 @@ margin-right: 0;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing:inherit;
+  letter-spacing: inherit;
   color: var(--titel-text-color);
   background-color: var(--team-section-backgroung);
   cursor: pointer;
@@ -360,12 +397,11 @@ margin-right: 0;
 }
 
 .button-list {
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 8px;
-margin-bottom: 50px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .filter-button:hover,
@@ -374,25 +410,30 @@ margin-bottom: 50px;
   background-color: var(--accent-color);
 }
 
-
 .project-list {
- display: flex;
- flex-wrap: wrap;
- gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-list .project-item {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-img {
-display:block;
+  display: block;
 }
 
 .border-titel {
- border: 1px solid #EEEEEE;
- border-top: none;
- padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 .project-titel {
@@ -401,7 +442,6 @@ display:block;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
- 
 }
 
 .project {
@@ -415,6 +455,17 @@ display:block;
   background-color: var(--secondary-site-backgroud);
   padding-top: 60px;
   padding-bottom: 60px;
+  /* outline: solid tomato; */
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  /* outline: solid tomato; */
+}
+
+.address {
+  /* outline: solid tomato; */
 }
 
 .footer-logo {
@@ -425,29 +476,25 @@ display:block;
   line-height: 1.2;
   display: block;
   margin-bottom: 20px;
-  
 }
 
 .card-address {
-font-style: normal;
-
+  font-style: normal;
 }
 
 .footer-list {
- margin-bottom: 9px;
-
+  margin-bottom: 9px;
 }
 
 .footer .footer-list:last-child {
-margin: 0px;
+  margin: 0px;
 }
 
 .footer .footer-address {
-  color:var(--main-site-color);
+  color: var(--main-site-color);
   text-decoration: none;
   font-size: 14px;
   line-height: calc(24 / 14);
-
 }
 
 .footer .footer-contact {
@@ -455,4 +502,12 @@ margin: 0px;
   text-decoration: none;
   font-size: 14px;
   line-height: calc(24 / 14);
+}
+
+.join-titel {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
