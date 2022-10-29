@@ -30,10 +30,15 @@
         </ul>
       </nav>
 
-      <ul class="header-contacts list">
-        <li><a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+       <ul class="header-contacts list">
+          <li class="item">
+            <a class="contact-list" href="mailto:info@devstudio.com"><svg class="contact-icon" width="16" height="12"><use href="./images/symbol-defs.svg#icon-envelope-hover-1" ></use></svg>
+            info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="contact-list" href="tel:+380961111111"><svg class="contact-icon" width="10" height="16"><use href="./images/symbol-defs.svg#icon-phone-1" ></use></svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
 
   </div>
    
@@ -149,34 +154,51 @@
 
     <!--Футер-->
 
-    <footer class=" section footer-nav">
+    <footer class="section footer-nav">
+      <div class="container footer-flex">
 
-      <div class="container">
+        <div class="address">
 
-  <a href="./index.html" class="footer-logo"> <span class="logo">Web</span>Studio</a>
+         <a href="./index.html" class="footer-logo"><span class="logo">Web</span>Studio</a>
 
-      <address class="card-address">
+        <address class="card-address">
+          <ul class="footer list">
+            <li class="footer-list">
+              <a
+                class="footer-address"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
 
-        <ul class="footer list">
+            <li class="footer-list">
+              <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
 
-          <li class="footer-list">
-            <a
-              class="footer-address"
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
+            <li class="footer-list">
+              <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        </div>
+        
 
-          <li class="footer-list"><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="footer-list"><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+        <div class="join">
+
+          <p class="join-titel">приєднуйтесь</p>
+
+          <ul class="join-list list">
+            <li class="join-item"><a class="join-link" href="#"><svg class="join-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram-2-2" ></use></svg></a></li>
+            <li class="join-item"><a class="join-link" href="#"><svg class="join-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter-1-1" ></use></svg></a></li>
+            <li class="join-item"><a class="join-link" href="#"><svg class="join-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook-1-1" ></use></svg></a></li>
+            <li class="join-item"><a class="join-link" href="#"><svg class="join-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin-1-1" ></use></svg></a></li>
+          </ul>
+
+        </div>
 
       </div>
-
-    
     </footer>
   </body>
 </html>

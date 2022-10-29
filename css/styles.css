@@ -126,7 +126,7 @@ body {
 /* навігація контактів */
 
 .header-contacts .contact-list {
-  display: block;
+  display: flex;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -141,6 +141,7 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  /* outline: solid tomato; */
 }
 
 .header-contacts .item + .item {
@@ -151,6 +152,19 @@ body {
 .contact-list:focus {
   color: var(--accent-color);
 }
+
+.contact-list {
+ display: flex;
+ align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding: 0;
+  fill: currentColor;
+}
+
 
 /* основний зміст студія*/
 
@@ -163,6 +177,9 @@ body {
   background-color: var(--secondary-site-backgroud);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay-hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -260,33 +277,10 @@ body {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   border-radius: 4px;
 }
 
-.icon1 {
-  background-image: url(../images/antenna\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon2 {
-  background-image: url(../images/clock\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon3 {
-  background-image: url(../images/diagram\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon4 {
-  background-image: url(../images/astronaut\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 /* Section occupation */
 
 .occupation {
@@ -369,6 +363,34 @@ body {
   /* outline: solid tomato; */
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 42px;
+}
+
+.social-link {
+width: 44px;
+height: 44px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color: #AFB1B8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+
+.social-icon {
+fill: currentColor;
+}
+
 /* Client_Logo */
 
 .client-header {
@@ -377,6 +399,35 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* outline: solid tomato; */
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /* Портфоліо */
@@ -465,6 +516,7 @@ body {
 }
 
 .address {
+  margin-right: 156px;
   /* outline: solid tomato; */
 }
 
@@ -507,7 +559,35 @@ body {
 .join-titel {
   color: #ffffff;
   font-size: 14px;
+  font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.join-link {
+  width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#FFFFFF;
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+
+.join-icon {
+  fill: currentColor;
+}
+
+.join-link:hover,
+.join-link:focus {
+background-color: #2196F3;
+
 }
