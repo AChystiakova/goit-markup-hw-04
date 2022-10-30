@@ -154,8 +154,8 @@ body {
 }
 
 .contact-list {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact-icon {
@@ -164,7 +164,6 @@ body {
   padding: 0;
   fill: currentColor;
 }
-
 
 /* основний зміст студія*/
 
@@ -359,7 +358,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   /* outline: solid tomato; */
 }
 
@@ -368,27 +367,27 @@ body {
   justify-content: center;
   align-items: center;
   gap: 22px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .social-link {
-width: 44px;
-height: 44px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
-color: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
 }
 
 .social-link:hover,
 .social-link:focus {
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .social-icon {
-fill: currentColor;
+  fill: currentColor;
 }
 
 /* Client_Logo */
@@ -471,8 +470,15 @@ fill: currentColor;
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 
-.project-item:hover,
+/* .project-item:hover,
 .project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.project-shadow:hover,
+.project-shadow:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -516,7 +522,7 @@ fill: currentColor;
 }
 
 .address {
-  margin-right: 156px;
+  margin-right: 70px;
   /* outline: solid tomato; */
 }
 
@@ -573,13 +579,13 @@ fill: currentColor;
 
 .join-link {
   width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:#FFFFFF;
-    background-color:rgba(255, 255, 255, 0.1) ;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .join-icon {
@@ -588,6 +594,5 @@ fill: currentColor;
 
 .join-link:hover,
 .join-link:focus {
-background-color: #2196F3;
-
+  background-color: #2196f3;
 }
